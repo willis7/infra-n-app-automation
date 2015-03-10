@@ -15,7 +15,7 @@ Vagrant.configure(2) do |config|
     override.ssh.username = "ubuntu"
     override.ssh.private_key_path = "~/.ssh/dev.pem"
 
-    aws.ami = "ami-234ecc54" #Ubuntu 12.04 LTS
+    aws.ami = "ami-234ecc54" #Ubuntu 14.04.1 LTS
     aws.region = "eu-west-1"
     aws.instance_type = "t2.micro"
     aws.security_groups = ["WebServerSG"]
