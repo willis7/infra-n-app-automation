@@ -4,5 +4,4 @@
   tasks:
       - name: update apt cache
         apt: update_cache=yes
-      - name: install docker.io
-        apt: name=docker.io state=present
+      - include: tasks/docker.yml
