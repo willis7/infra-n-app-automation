@@ -26,9 +26,7 @@ Vagrant.configure(2) do |config|
   end
 
   # Provisioning
-  config.vm.provision :shell do |shell|
-    shell.inline = "sudo apt-get install -y puppet-common"
+  config.vm.provision :ansible do |ansible|
+      ansible.playbook = "playbooks/playbook.yml"
   end
-
-  config.vm.provision :puppet
 end

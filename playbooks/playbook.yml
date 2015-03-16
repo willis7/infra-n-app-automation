@@ -1,0 +1,8 @@
+---
+- hosts: all
+  sudo: true
+  tasks:
+      - name: update apt cache
+        apt: update_cache=yes
+      - name: install docker.io
+        apt: name=docker.io state=present
