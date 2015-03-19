@@ -2,4 +2,6 @@
 ### Vagrant template
 .vagrant/
 
-
+### Gradle template
+app/.gradle
+app/build

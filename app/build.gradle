@@ -12,6 +12,9 @@ apply plugin: 'eclipse'
 apply plugin: 'idea'
 apply plugin: 'spring-boot'
 
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+
 jar {
     baseName = 'gs-spring-boot'
     version =  '0.1.0'
