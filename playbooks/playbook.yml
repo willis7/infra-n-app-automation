@@ -1,7 +1,6 @@
 ---
-- hosts: all
+- name: Run docker.ubuntu
+  hosts: all
   sudo: true
-  tasks:
-      - name: update apt cache
-        apt: update_cache=yes
-      - include: tasks/docker.yml
+  roles:
+    - angstwad.docker_ubuntu

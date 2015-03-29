@@ -1,0 +1,15 @@
+# infra-n-app-automation
+
+An example of: 
+* Vagrant
+* Amazon AWS
+* Ansible
+* Docker
+* Gradle
+* Microservices with SpringBoot
+
+The blog entries can be found here:
+. https://willis7.github.io/blog/2015/03/vagrant-aws-docker-gradle.html[Part 1]
+. https://willis7.github.io/blog/2015/03/vagrant-aws-docker-gradle-pt2.html[Part 2]
+. https://willis7.github.io/blog/2015/03/vagrant-aws-docker-gradle-pt3.html[Part 3]
+. https://willis7.github.io/blog/2015/03/vagrant-aws-docker-gradle-pt4.html[Part 4]
