@@ -13,7 +13,7 @@ Vagrant.configure(2) do |config|
   config.vm.provider :aws do |aws, override|
     aws.keypair_name = "dev"
     override.ssh.username = "ubuntu"
-    override.ssh.private_key_path = "~/.ssh/dev.pem"
+    override.ssh.private_key_path = "~/.ssh/amz.pem"
 
     aws.ami = "ami-234ecc54" #Ubuntu 14.04.1 LTS
     aws.region = "eu-west-1"
