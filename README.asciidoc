@@ -13,3 +13,30 @@ The blog entries can be found here:
 . https://willis7.github.io/blog/2015/03/vagrant-aws-docker-gradle-pt2.html[Part 2]
 . https://willis7.github.io/blog/2015/03/vagrant-aws-docker-gradle-pt3.html[Part 3]
 . https://willis7.github.io/blog/2015/03/vagrant-aws-docker-gradle-pt4.html[Part 4]
+
+
+=== Instructions
+
+# Build the source code and run unit tests
+$ cd app
+$ .gradlew clean build
+
+# Create and provision a VM
+$ cd ..
+$ vagrant up
+
+# ssh into the box
+$ vagrant ssh
+
+# cd to the docker scripts
+$ cd /vagrant/docker/
+
+# docker build
+$ . docker-build.sh
+
+# docker run
+$ . docker-run.sh
+
+# test service running
+$ curl localhost:8080
+Greetings from Spring Boot!
