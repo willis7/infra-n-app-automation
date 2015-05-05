@@ -8,4 +8,4 @@ echo "########### Copying the Gradle build outputs to this build directory #####
 cp ../build/libs/gs-spring-boot-0.1.0.jar build
 
 echo "########### Building the Docker image from the Dockerfile ###########"
-sudo docker build --rm -t gs_spring_boot .
+docker build --rm -t gs_spring_boot .
